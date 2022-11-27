@@ -9,6 +9,6 @@ public class SmartCabrio extends Auto{
 
     @Override
     public int getPreis(Linie linie, Motorisierung motorisierung){
-        return super.getPreis(getLinie(),getMotor()) + 3100;
+        return super.getPreis(getLinie(),getMotor());
     }
 }

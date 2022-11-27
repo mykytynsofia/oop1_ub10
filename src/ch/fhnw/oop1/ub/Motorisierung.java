@@ -8,7 +8,7 @@ public enum Motorisierung {
         }
         @Override
         public int getPrice() {
-            return 0;
+            return 1200;
         }
     },
     BENZIN{
@@ -18,7 +18,7 @@ public enum Motorisierung {
         }
         @Override
         public int getPrice() {
-            return 1200;
+            return 0;
         }
     };
     public abstract int getPrice();

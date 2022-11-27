@@ -22,7 +22,14 @@ public class TestAuto {
     @Test
     public void testPreis(){
         Auto autoCabrio = new SmartCabrio(Color.BLACK, Motorisierung.BENZIN, true, Linie.PURE);
-        int preis = 17950;
+        int preis = 14850;
+        assertEquals(preis,autoCabrio.getPreis(autoCabrio.getLinie(),autoCabrio.getMotor()));
+    }
+
+    @Test
+    public void testPreisWithDiesel(){
+        Auto autoCabrio = new SmartCabrio(Color.BLACK, Motorisierung.DIESEL, true, Linie.PURE);
+        int preis = 16050;
         assertEquals(preis,autoCabrio.getPreis(autoCabrio.getLinie(),autoCabrio.getMotor()));
     }
 }

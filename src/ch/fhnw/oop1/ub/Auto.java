@@ -36,7 +36,11 @@ public class Auto {
     }
 
     public int getPreis(Linie linie, Motorisierung motorisierung) {
-        return linie.getPrice() + motorisierung.getPrice();
+        if(hasFeature()) {
+            return linie.getPrice() + motorisierung.getPrice() + 460;
+        } else {
+            return linie.getPrice() + motorisierung.getPrice();
+        }
     }
 
     public Motorisierung getMotor() {
