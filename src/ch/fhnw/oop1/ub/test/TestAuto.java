@@ -16,7 +16,7 @@ public class TestAuto {
      public void testAuto(){
         Auto autoCabrio = new SmartCabrio(Color.BLACK, Motorisierung.BENZIN, true, Linie.PURE);
         Auto autoCity = new SmartCity(Color.BLACK, Motorisierung.BENZIN, true, Linie.PURE);
-        assertTrue(autoCity.equals(autoCabrio));
+        assertFalse(autoCity.equals(autoCabrio));
     }
 
     @Test
